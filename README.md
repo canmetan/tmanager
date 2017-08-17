@@ -13,7 +13,7 @@ An open source task and time management application that aims to maximize your p
 - The only supported OS is Linux (Debian) currently, ports will be made after the initial release.
 - At this stage, I'm not looking for additional developers for the project, however any feedback / suggestions are appreciated.
 
-## Icons:
-- Designed by Madebyoliver from Flaticon
+## Acknowledgements:
+- Icons are designed by Madebyoliver from Flaticon
 
 Current license: GPL v3
