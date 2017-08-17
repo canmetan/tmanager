@@ -12,12 +12,13 @@ MainFrame::MainFrame() :
     wxImage::AddHandler( new wxPNGHandler );
 
     //wxBitmap exit(wxT("../img/add-1.png"), wxBITMAP_TYPE_PNG);
-    wxBitmap settingsImg(wxT("add-1.png"), wxBITMAP_TYPE_PNG);
+    wxBitmap settingsImg(wxT("img/add-1.png"), wxBITMAP_TYPE_PNG);
 
     wxToolBar *toolbar = CreateToolBar();
+    //toolbar->InsertTool()
     toolbar->AddTool(m_SETTINGS_BUT_ID, settingsImg, wxT("Open settings"));
     toolbar->Realize();
-
+//
     Connect(m_SETTINGS_BUT_ID, wxEVT_COMMAND_TOOL_CLICKED,
     wxCommandEventHandler(MainFrame::handleEvent));
 
