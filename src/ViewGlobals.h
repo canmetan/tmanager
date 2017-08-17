@@ -3,6 +3,10 @@
 
 #include <wx/string.h>
 
-wxString G_PROGRAM_TITLE = wxT("Grit TTMS");
+// 3 types of view types:
+// Standard view
+// Minimal view
+// System tray view
+
 
 #endif // VIEWGLOBALS_H_INCLUDED
