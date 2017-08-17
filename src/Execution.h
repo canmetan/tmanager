@@ -8,6 +8,7 @@
 #define EXECUTION_H
 
 #include <wx/wx.h>
+
 #include "ProgramController.h"
 
 class Execution : public wxApp

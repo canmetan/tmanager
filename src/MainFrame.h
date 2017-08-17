@@ -5,6 +5,8 @@
 #include <wx/notebook.h>
 #include <vector>
 
+// "designed by Madebyoliver from Flaticon"
+
 using std::vector;
 
 enum class ViewType {
@@ -16,20 +18,24 @@ enum class ViewType {
 class MainFrame : public wxFrame
 {
     public:
-        MainFrame(const wxString title);
+        MainFrame();
         virtual ~MainFrame();
 
         bool updateView();
 
+        void handleEvent(wxCommandEvent& WXUNUSED(event));
+
     private:
-        wxNotebook *m_tabs;
         wxPanel    *m_mainPanel;
-        wxPanel    *m_toolBarPanel;
+        wxPanel    *m_taskPanel;
+        wxPanel    *m_calendarPanel;
+
+        wxButton   *m_settingsButton;
+
+        wxBoxSizer *m_vertialSizer;
+        wxBoxSizer *m_horizontalSizer;
+
+        // IDs for events
+        const int m_SETTINGS_BUT_ID = 100;
 };
-
 #endif // MAINFRAME_H
-
-// 3 types of view types:
-// Standard view
-// Minimal view
-// System tray view
