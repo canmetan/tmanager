@@ -1,4 +1,4 @@
-#include "MainFrame.h"
+#include "MainFrame.hpp"
 
 #include <wx/wx.h>
 #include <wx/notebook.h>
@@ -18,7 +18,7 @@ MainFrame::MainFrame() :
     //toolbar->InsertTool()
     toolbar->AddTool(m_SETTINGS_BUT_ID, settingsImg, wxT("Open settings"));
     toolbar->Realize();
-//
+
     Connect(m_SETTINGS_BUT_ID, wxEVT_COMMAND_TOOL_CLICKED,
     wxCommandEventHandler(MainFrame::handleEvent));
 

@@ -44,6 +44,7 @@ namespace Cast {
         return conv.from_bytes(s);
     }
 
+    // CHANGE THIS
     u32string ToUTF32(const u16string &s)
     {
         const char16_t *pData = s.c_str();

@@ -2,6 +2,7 @@
 //
 // Software for tracking, recording and managing time.
 // Distributed under GPL version 2.
+//
 // Author: Can Metan
 
 #ifndef EXECUTION_HPP
@@ -9,7 +10,7 @@
 
 #include <wx/wx.h>
 
-#include "ProgramController.h"
+#include "ProgramController.hpp"
 
 class Execution : public wxApp
 {
