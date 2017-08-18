@@ -5,15 +5,9 @@
 #include <wx/notebook.h>
 #include <vector>
 
-// "designed by Madebyoliver from Flaticon"
+// Icons are designed by Madebyoliver from Flaticon
 
 using std::vector;
-
-enum class ViewType {
-    STANDARD = 10,
-    MINIMAL = 20,
-    TRAY = 30
-};
 
 class MainFrame : public wxFrame
 {
