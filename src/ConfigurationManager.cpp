@@ -16,5 +16,3 @@ bool loadConfigFromFile () {
 bool saveConfigurationToFile() {
     return true;
 }
-//
-// triviall
