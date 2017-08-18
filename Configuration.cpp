@@ -2,18 +2,17 @@
 
 Configuration::Configuration()
 {
-    //ctor
 }
 
 Configuration::~Configuration()
 {
-    //dtor
 }
 
-wxString Configuration::getTitle() const {
+u16string Configuration::getTitle() const {
     return m_title;
 }
 
-void Configuration::setTitle(wxString title) {
+void Configuration::setTitle(u16string title) {
     m_title = title;
+    m_title.ToStdWstring()
 }

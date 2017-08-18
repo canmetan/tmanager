@@ -1,5 +1,5 @@
-#ifndef CONFIGURATION_H
-#define CONFIGURATION_H
+#ifndef CONFIGURATION_HPP
+#define CONFIGURATION_HPP
 
 
 #include <wx/ustring.h>
@@ -16,13 +16,11 @@ class Configuration
         ~Configuration();
 
     public:
-        wxString getTitle() const;
-        void setTitle(wxString title);
+        u16string getTitle() const;
+        void setTitle(u16string title);
 
     private:
-        wxString m_title;
-
-        u16string someString;
+        u16string m_title;
 };
 
-#endif // CONFIGURATION_H
+#endif // CONFIGURATION_HPP
