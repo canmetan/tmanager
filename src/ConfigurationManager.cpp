@@ -17,3 +17,4 @@ bool saveConfigurationToFile() {
     return true;
 }
 //
+// triviall
