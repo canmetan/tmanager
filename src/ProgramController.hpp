@@ -1,7 +1,7 @@
-#ifndef PROGRAMCONTROLLER_H
-#define PROGRAMCONTROLLER_H
+#ifndef PROGRAMCONTROLLER_HPP
+#define PROGRAMCONTROLLER_HPP
 
-#include "MainFrame.h"
+#include "MainFrame.hpp"
 
 class ProgramController
 {
