@@ -4,8 +4,8 @@
 // Distributed under GPL version 2.
 // Author: Can Metan
 
-#ifndef EXECUTION_H
-#define EXECUTION_H
+#ifndef EXECUTION_HPP
+#define EXECUTION_HPP
 
 #include <wx/wx.h>
 
@@ -22,4 +22,4 @@ class Execution : public wxApp
         ProgramController *m_ctrler;
 };
 
-#endif // EXECUTION_H
+#endif // EXECUTION_HPP
