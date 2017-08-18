@@ -1,4 +1,4 @@
-#include "ProgramController.h"
+#include "ProgramController.hpp"
 
 ProgramController::ProgramController()
 {
