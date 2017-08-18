@@ -8,6 +8,9 @@ An open source task and time management application that aims to maximize your p
 - Customizability: Both visually and functionally, software should be easily customizable.
 - Beginner Friendly: One shouldn't know have to go through a 200 page documentation to accomplish simple tasks.
 
+## Features
+- Unicode support (UTF-16)
+
 ## Project Status:
 - Project is under development, no official releases yet.
 - The only supported OS is Linux (Debian) currently, ports will be made after the initial release.
