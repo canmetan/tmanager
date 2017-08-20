@@ -5,7 +5,7 @@
 #include <wx/notebook.h>
 #include <vector>
 
-// Icons are designed by Madebyoliver from Flaticon
+#include "Configuration.hpp"
 
 using std::vector;
 
@@ -30,6 +30,6 @@ class MainFrame : public wxFrame
         wxBoxSizer *m_horizontalSizer;
 
         // IDs for events
-        const int m_SETTINGS_BUT_ID = 100;
+        const int m_ID_SETTINGS_BUTTON = 100;
 };
 #endif // MAINFRAME_H

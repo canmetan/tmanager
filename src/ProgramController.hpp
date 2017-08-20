@@ -1,6 +1,7 @@
 #ifndef PROGRAMCONTROLLER_HPP
 #define PROGRAMCONTROLLER_HPP
 
+#include "SettingsManager.hpp"
 #include "MainFrame.hpp"
 
 class ProgramController
@@ -12,6 +13,7 @@ class ProgramController
         void launchProgram();
 
     private:
+        SettingsManager *m_configManager;
         MainFrame *m_frame;
 };
 

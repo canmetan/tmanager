@@ -1,18 +1,20 @@
 #include "ConfigurationManager.hpp"
 
-ConfigurationManager::ConfigurationManager(const string &configFilePath) :
-    m_configFilePath(configFilePath)
+ConfigurationManager::ConfigurationManager() :
+    m_settingsPath(const string &settingsPath)
 {
+    m_currentConfigIndex = 0;
+    // Retrieve setting # from file
 }
 
 ConfigurationManager::~ConfigurationManager()
 {
 }
 
-bool loadConfigFromFile () {
+bool ConfigurationManager::loadConfiguration () {
     return true;
 }
 
-bool saveConfigurationToFile() {
+bool ConfigurationManager::saveConfiguration() {
     return true;
 }

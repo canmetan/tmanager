@@ -16,16 +16,16 @@ MainFrame::MainFrame() :
 
     wxToolBar *toolbar = CreateToolBar();
     //toolbar->InsertTool()
-    toolbar->AddTool(m_SETTINGS_BUT_ID, settingsImg, wxT("Open settings"));
+    toolbar->AddTool(m_ID_SETTINGS_BUTTON, settingsImg, wxT("Open settings"));
     toolbar->Realize();
 
-    Connect(m_SETTINGS_BUT_ID, wxEVT_COMMAND_TOOL_CLICKED,
+    Connect(m_ID_SETTINGS_BUTTON, wxEVT_COMMAND_TOOL_CLICKED,
     wxCommandEventHandler(MainFrame::handleEvent));
 
     m_vertialSizer = new wxBoxSizer(wxHORIZONTAL);
     m_taskPanel = new wxPanel(m_mainPanel);
     m_calendarPanel = new wxPanel(m_mainPanel);
-    m_settingsButton = new wxButton(m_mainPanel, m_SETTINGS_BUT_ID,
+    m_settingsButton = new wxButton(m_mainPanel, m_ID_SETTINGS_BUTTON,
                                     wxT("Settings"));
 
     Centre();
