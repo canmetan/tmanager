@@ -9,6 +9,7 @@
 #define EXECUTION_HPP
 
 #include <wx/wx.h>
+#include <memory>
 
 #include "ProgramController.hpp"
 
@@ -20,7 +21,7 @@ class Execution : public wxApp
         virtual bool OnInit();
 
     private:
-        ProgramController *m_ctrler;
+        std::unique_ptr<ProgramController> m_ctrler;
 };
 
 #endif // EXECUTION_HPP

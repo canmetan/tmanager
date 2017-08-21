@@ -2,10 +2,10 @@
 #define MAINFRAME_HPP
 
 #include <wx/wx.h>
-#include <wx/notebook.h>
+//#include <wx/notebook.h>
 #include <vector>
 
-#include "Configuration.hpp"
+//#include "Configuration.hpp"
 
 using std::vector;
 
@@ -21,13 +21,13 @@ class MainFrame : public wxFrame
 
     private:
         wxPanel    *m_mainPanel;
-        wxPanel    *m_taskPanel;
-        wxPanel    *m_calendarPanel;
-
-        wxButton   *m_settingsButton;
-
-        wxBoxSizer *m_vertialSizer;
-        wxBoxSizer *m_horizontalSizer;
+//        wxPanel    *m_taskPanel;
+//        wxPanel    *m_calendarPanel;
+//
+//        wxButton   *m_settingsButton;
+//
+//        wxBoxSizer *m_vertialSizer;
+//        wxBoxSizer *m_horizontalSizer;
 
         // IDs for events
         const int m_ID_SETTINGS_BUTTON = 100;

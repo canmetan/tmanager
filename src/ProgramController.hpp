@@ -1,8 +1,13 @@
 #ifndef PROGRAMCONTROLLER_HPP
 #define PROGRAMCONTROLLER_HPP
 
+#include <memory>
+
 #include "SettingsManager.hpp"
 #include "MainFrame.hpp"
+
+//using std::unique_ptr;
+//using std::make_unique;
 
 class ProgramController
 {
@@ -13,8 +18,9 @@ class ProgramController
         void launchProgram();
 
     private:
-        SettingsManager *m_configManager;
-        MainFrame *m_frame;
+        std::unique_ptr<SettingsManager> m_settingsManager;
+        std::unique_ptr<MainFrame>       m_frame;
 };
 
 #endif // PROGRAMCONTROLLER_H
+

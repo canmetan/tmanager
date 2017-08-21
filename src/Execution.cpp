@@ -1,13 +1,11 @@
 #include "Execution.hpp"
 
-Execution::Execution()
+Execution::Execution() : m_ctrler (std::make_unique<ProgramController>())
 {
-    m_ctrler = new ProgramController;
 }
 
 Execution::~Execution()
 {
-    delete m_ctrler;
 }
 
 IMPLEMENT_APP(Execution)

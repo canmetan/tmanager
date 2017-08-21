@@ -13,22 +13,16 @@
 class ConfigurationManager
 {
     public:
-        ConfigurationManager(const string &settingsPath);
+        ConfigurationManager();
         virtual ~ConfigurationManager();
-    private:
-        ConfigurationManager(); // Prevent default constructor
 
     public:
         bool loadConfig(Configuration &configSettings);
-        bool saveConfig();
+        bool saveConfig(Configuration &configSettings);
 
-        bool addConfigPath    (const string &path);
-        bool removeConfigPath (const string &path);
-        bool removeConfigPath (int index);
     private:
         Configuration m_config;
-        int m_currentConfigIndex;
-        const string m_settingsPath;
+        string m_currentConfigPath;
 };
 
 #endif // CONFIGURATIONMANAGER_HPP
