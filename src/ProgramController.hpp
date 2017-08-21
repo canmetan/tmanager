@@ -4,10 +4,10 @@
 #include <memory>
 
 #include "SettingsManager.hpp"
-#include "MainFrame.hpp"
+#include "DisplayController.hpp"
 
-//using std::unique_ptr;
-//using std::make_unique;
+using std::unique_ptr;
+using std::make_unique;
 
 class ProgramController
 {
@@ -16,11 +16,11 @@ class ProgramController
         ~ProgramController();
 
         void launchProgram();
+        void quitProgram();
 
     private:
-        std::unique_ptr<SettingsManager> m_settingsManager;
-        std::unique_ptr<MainFrame>       m_frame;
+        unique_ptr<SettingsManager>   m_settingsManager;
+        unique_ptr<DisplayController> m_displayController;
 };
 
 #endif // PROGRAMCONTROLLER_H
-

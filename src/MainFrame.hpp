@@ -3,11 +3,11 @@
 
 #include <wx/wx.h>
 //#include <wx/notebook.h>
-#include <vector>
+//#include <vector>
 
 //#include "Configuration.hpp"
 
-using std::vector;
+//using std::vector;
 
 class MainFrame : public wxFrame
 {
@@ -16,11 +16,10 @@ class MainFrame : public wxFrame
         virtual ~MainFrame();
 
         bool updateView();
-
         void handleEvent(wxCommandEvent& WXUNUSED(event));
 
     private:
-        wxPanel    *m_mainPanel;
+        wxPanel   *m_mainPanel;
 //        wxPanel    *m_taskPanel;
 //        wxPanel    *m_calendarPanel;
 //
@@ -28,8 +27,9 @@ class MainFrame : public wxFrame
 //
 //        wxBoxSizer *m_vertialSizer;
 //        wxBoxSizer *m_horizontalSizer;
+        wxColor toolBarColor;
 
         // IDs for events
-        const int m_ID_SETTINGS_BUTTON = 100;
+        const int m_ID_tbSettingsButton = 100;
 };
 #endif // MAINFRAME_H

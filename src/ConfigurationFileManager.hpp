@@ -10,11 +10,11 @@
 
 #include "Configuration.hpp"
 
-class ConfigurationManager
+class ConfigurationFileManager
 {
     public:
-        ConfigurationManager();
-        virtual ~ConfigurationManager();
+        ConfigurationFileManager();
+        virtual ~ConfigurationFileManager();
 
     public:
         bool loadConfig(Configuration &configSettings);

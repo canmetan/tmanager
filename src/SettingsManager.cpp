@@ -23,9 +23,9 @@
 #endif
 
 SettingsManager::SettingsManager() :
-    m_configManager (make_unique<ConfigurationManager>()),
     m_configPaths(vector<string>()),
-    m_currentConfigIndex(0)
+    m_currentConfigIndex(0),
+    m_configManager (make_unique<ConfigurationFileManager>())
 {
 }
 

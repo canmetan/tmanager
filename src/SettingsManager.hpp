@@ -6,7 +6,7 @@
 #include <string>
 #include <memory>
 
-#include "ConfigurationManager.hpp"
+#include "ConfigurationFileManager.hpp"
 
 using std::vector;
 using std::string;
@@ -29,9 +29,9 @@ class SettingsManager
         bool removeConfigPath (const string &path);
         bool removeConfigPath (int index);
     private:
-        vector<string>                   m_configPaths;
-        int                              m_currentConfigIndex;
-        unique_ptr<ConfigurationManager> m_configManager;
+        vector<string>                       m_configPaths;
+        int                                  m_currentConfigIndex;
+        unique_ptr<ConfigurationFileManager> m_configManager;
 };
 
 #endif // SETTINGSMANAGER_HPP
