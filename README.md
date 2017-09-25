@@ -1,5 +1,5 @@
-# Grit Prodapptivity
-An open source task and time management application that aims to maximize your productivity. Reduce chaos, reduce anxiety, reduce ambiguity, enjoy life.
+# Grit TManager
+An open source Task and Time Management application that aims to maximize your productivity. Reduce chaos, reduce task cluttering, reduce ambiguity, anxiety and enjoy life.
 
 ## Project Goals:
 - Flexibility: Should cater to various task and time management methodologies such as daily to-do lists, Pomodoro etc.
@@ -17,6 +17,6 @@ An open source task and time management application that aims to maximize your p
 - At this stage, I'm not looking for additional developers for the project, however any feedback / suggestions are appreciated.
 
 ## Acknowledgements:
-- Icons are designed by Madebyoliver from Flaticon
+- Icons currently in the alpha version are designed by Madebyoliver from Flaticon
 
 Current license: GPL v3
