@@ -3,7 +3,7 @@
 
 #include <memory>
 
-#include "ConfigurationManager.hpp"
+#include "ConfigurationFileManager.hpp"
 #include "DisplayController.hpp"
 
 using std::unique_ptr;
@@ -19,8 +19,8 @@ class ProgramController
         void quitProgram();
 
     private:
-        unique_ptr<ConfigurationManager> m_configManager;
-        unique_ptr<DisplayController>    m_displayController;
+        unique_ptr<ConfigurationFileManager> m_configFileManager;
+        unique_ptr<DisplayController>        m_displayController;
 };
 
 #endif // PROGRAMCONTROLLER_H

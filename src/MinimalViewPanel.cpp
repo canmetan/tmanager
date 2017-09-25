@@ -1,11 +1,11 @@
-#include "MinimalViewPanel.hpp"
-
-MinimalViewPanel::MinimalViewPanel()
-{
-    //ctor
-}
-
-MinimalViewPanel::~MinimalViewPanel()
-{
-    //dtor
-}
+//#include "MinimalViewPanel.hpp"
+//
+//MinimalViewPanel::MinimalViewPanel()
+//{
+//    //ctor
+//}
+//
+//MinimalViewPanel::~MinimalViewPanel()
+//{
+//    //dtor
+//}

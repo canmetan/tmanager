@@ -2,7 +2,7 @@
 
 DisplayController::DisplayController()
 {
-    m_mainFrame = new MainFrame;
+//    m_mainFrame = new MainFrame;
 }
 
 DisplayController::~DisplayController()
@@ -10,9 +10,9 @@ DisplayController::~DisplayController()
 }
 
 void DisplayController::showMainWindow(){
-    m_mainFrame->Show(true);
+//    m_mainFrame->Show(true);
 }
 
 void DisplayController::minimizeToTray(){
-    m_mainFrame->Show(false);
+//    m_mainFrame->Show(false);
 }

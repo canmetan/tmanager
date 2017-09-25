@@ -12,8 +12,8 @@ ProgramController::~ProgramController()
 
 void ProgramController::launchProgram()
 {
-    m_configManager->loadSettings();
-    m_displayController->showMainWindow();
+//    m_configManager->loadSettings();
+//    m_displayController->showMainWindow();
 }
 
 void ProgramController::quitProgram(){

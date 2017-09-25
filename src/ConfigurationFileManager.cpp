@@ -1,14 +1,18 @@
 #include "ConfigurationFileManager.hpp"
 
+
+// For now, the location for the configuration file is fixed for each platform
 #ifdef TARGET_OS_MAC
-    #error "Prodapptivity isn't supported on MAC yet"
+    #error "TManager isn't being supported on MAC yet."
 #elif defined __linux__
-    const string settingsFilePath = "~/.config/prodapptivity/settings";
+    const string configFilePath = "~/.config/prodapptivity/settings";
 #elif defined _WIN32 || defined _WIN64
-    #error "Prodapptivity isn't supported on MAC yet"
+    #error "TManager isn't being supported on Windows yet."
 #else
     #error "This unknown platform is not supported"
 #endif
+
+
 
 ConfigurationFileManager::ConfigurationFileManager()
 {

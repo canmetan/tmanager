@@ -6,9 +6,11 @@
 #ifndef CONFIGURATIONFILEMANAGER_HPP
 #define CONFIGURATIONFILEMANAGER_HPP
 
-#include <vector>
+#include <fstream>
 
 #include "Configuration.hpp"
+
+using std::fstream;
 
 class ConfigurationFileManager
 {
@@ -17,12 +19,25 @@ class ConfigurationFileManager
         virtual ~ConfigurationFileManager();
 
     public:
-        bool loadConfig(Configuration &configSettings);
-        bool saveConfig(Configuration &configSettings);
+        // Config Accessors
+        bool loadCurrentConfig(Configuration &config) const;
+        bool loadDefaultConfig(Configuration &config) const;
+        bool loadConfig(Configuration &config, const int index);
+        bool loadConfig(Configuration &config, const string &name);
+
+        // Config Mutators
+        bool updateCurrentConfig (const Configuration &config);
+        bool updateConfig (const Configuration &config, const int    index);
+        bool updateConfig (const Configuration &config, const string &name);
+        bool addConfig    (const Configuration &config, const int    index);
+        bool addConfig    (const Configuration &config, const string &name);
+        bool deleteConfig (const string        &name);
+        bool deleteConfig (const int           index);
 
     private:
-        Configuration m_config;
-        string m_currentConfigPath;
+        vector<string> m_configList;
+        int            m_currentConfigIndex;
+        fstream        m_fs;
 };
 
 #endif // CONFIGURATIONFILEMANAGER_HPP

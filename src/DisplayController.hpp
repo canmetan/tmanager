@@ -17,7 +17,7 @@ class DisplayController
         void showMainWindow();
         void minimizeToTray();
     private:
-        MainFrame *m_mainFrame;
+//        MainFrame *m_mainFrame;
 };
 
 #endif // DISPLAYCONTROLLER_HPP
