@@ -2,10 +2,10 @@
 #define MAINFRAME_HPP
 
 #include <wx/wx.h>
-//#include <wx/notebook.h>
-//#include <vector>
 
-//#include "Configuration.hpp"
+#include "Configuration.hpp"
+#include "MinimalViewPanel.hpp"
+#include "StandardViewPanel.hpp"
 
 //using std::vector;
 
@@ -13,23 +13,17 @@ class MainFrame : public wxFrame
 {
     public:
         MainFrame();
+        MainFrame(const Configuration &config);
         virtual ~MainFrame();
 
-        bool updateView();
-        void handleEvent(wxCommandEvent& WXUNUSED(event));
+        void reconfigure(const Configuration &config);
+        void setPerspective(const Perspective &perspective);
 
     private:
-        wxPanel   *m_mainPanel;
-//        wxPanel    *m_taskPanel;
-//        wxPanel    *m_calendarPanel;
-//
-//        wxButton   *m_settingsButton;
-//
-//        wxBoxSizer *m_vertialSizer;
-//        wxBoxSizer *m_horizontalSizer;
-        wxColor toolBarColor;
+        wxBoxSizer        *m_sizer;
+        MinimalViewPanel  *m_minViewPanel;
+        StandardViewPanel *m_stdViewPanel;
 
-        // IDs for events
-        const int m_ID_tbSettingsButton = 100;
+        Perspective       m_perspective;
 };
 #endif // MAINFRAME_H

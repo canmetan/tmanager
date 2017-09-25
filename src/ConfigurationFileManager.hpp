@@ -3,8 +3,8 @@
 *   Stores the path information into settings file.
 **/
 
-#ifndef CONFIGURATIONMANAGER_HPP
-#define CONFIGURATIONMANAGER_HPP
+#ifndef CONFIGURATIONFILEMANAGER_HPP
+#define CONFIGURATIONFILEMANAGER_HPP
 
 #include <vector>
 
@@ -25,4 +25,4 @@ class ConfigurationFileManager
         string m_currentConfigPath;
 };
 
-#endif // CONFIGURATIONMANAGER_HPP
+#endif // CONFIGURATIONFILEMANAGER_HPP

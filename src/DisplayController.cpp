@@ -1,8 +1,8 @@
 #include "DisplayController.hpp"
 
-DisplayController::DisplayController() :
-    m_mainFrame(make_unique<MainFrame>())
+DisplayController::DisplayController()
 {
+    m_mainFrame = new MainFrame;
 }
 
 DisplayController::~DisplayController()

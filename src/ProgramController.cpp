@@ -1,7 +1,7 @@
 #include "ProgramController.hpp"
 
 ProgramController::ProgramController() :
-    m_settingsManager (make_unique<SettingsManager>()),
+    m_configManager     (make_unique<ConfigurationManager>()),
     m_displayController (make_unique<DisplayController>())
 {
 }
@@ -12,7 +12,7 @@ ProgramController::~ProgramController()
 
 void ProgramController::launchProgram()
 {
-    m_settingsManager->loadSettings();
+    m_configManager->loadSettings();
     m_displayController->showMainWindow();
 }
 

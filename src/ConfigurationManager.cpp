@@ -1,4 +1,4 @@
-#include "SettingsManager.hpp"
+#include "ConfigurationManager.hpp"
 
 //            m_configPaths.assign(configPaths.begin(),
 //                             configPaths.end());
@@ -22,18 +22,22 @@
     #error "This unknown platform is not supported"
 #endif
 
-SettingsManager::SettingsManager() :
+ConfigurationManager::ConfigurationManager() :
     m_configPaths(vector<string>()),
     m_currentConfigIndex(0),
-    m_configManager (make_unique<ConfigurationFileManager>())
+    m_configFileManager (make_unique<ConfigurationFileManager>())
 {
 }
 
-SettingsManager::~SettingsManager()
+ConfigurationManager::~ConfigurationManager()
 {
 }
 
-bool SettingsManager::loadSettings(){
+#include <iostream>
+using std::cout;
+using std::endl;
+bool ConfigurationManager::loadSettings(){
+    cout << "Loading settings" << endl;
 //    wxMessageDialog dialog(nullptr, wxT("Couldn't load the settings"),
 //                    wxT("fatal Errr"), wxICON_ERROR);
 //    dialog.ShowModal();

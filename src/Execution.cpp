@@ -1,17 +1,16 @@
 #include "Execution.hpp"
 
-Execution::Execution() : m_ctrler (std::make_unique<ProgramController>())
-{
-}
-
-Execution::~Execution()
-{
-}
-
 IMPLEMENT_APP(Execution)
 
-bool Execution::OnInit()
-{
-    m_ctrler->launchProgram();
+bool Execution::OnInit() {
+    m_controller = make_unique<ProgramController>();
+    m_controller->launchProgram();
+
     return true;
+}
+
+int Execution::OnExit(){
+//    delete m_controller;
+
+    return 0;
 }

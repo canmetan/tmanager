@@ -1,23 +1,24 @@
-#ifndef SETTINGSMANAGER_HPP
-#define SETTINGSMANAGER_HPP
+#ifndef CONFIGURATIONMANAGER_HPP
+#define CONFIGURATIONMANAGER_HPP
 
-#include <wx/msgdlg.h>
+//#include <wx/msgdlg.h>
 #include <vector>
 #include <string>
 #include <memory>
 
 #include "ConfigurationFileManager.hpp"
+#include "SettingsFileManager.hpp"
 
 using std::vector;
 using std::string;
 using std::unique_ptr;
 using std::make_unique;
 
-class SettingsManager
+class ConfigurationManager
 {
     public:
-        SettingsManager();
-        virtual ~SettingsManager();
+        ConfigurationManager();
+        virtual ~ConfigurationManager();
 
     public:
         bool loadSettings();
@@ -31,7 +32,7 @@ class SettingsManager
     private:
         vector<string>                       m_configPaths;
         int                                  m_currentConfigIndex;
-        unique_ptr<ConfigurationFileManager> m_configManager;
+        unique_ptr<ConfigurationFileManager> m_configFileManager;
 };
 
-#endif // SETTINGSMANAGER_HPP
+#endif // CONFIGURATIONMANAGER_HPP
