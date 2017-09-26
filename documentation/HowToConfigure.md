@@ -1,7 +1,10 @@
 # How To Configure
 Configuration can be done through both the user interface () and through the configuration text file. Regardless, you can choose to have multiple configuration profiles and switch between when needed.
 
-## Through User Interface
+## Through The User Interface
+Just click the 'settings button' in the menu
+=== Insert Screenshot here ===
+Choose profile bla bla.
 
 ## Through The Configuration Text File.
 
@@ -18,8 +21,7 @@ You can synchronize these files across the computers / operating systems.
 - Any line starting with '\#' will be ignored as a comment.
 - Configuration file is composed of profiles that are denoted by a name and seperated by braces. For example:
 
-<pre><code>
-MyConfig {
+<pre><code> MyConfig {
 
 # Contents
 
