@@ -1,3 +1,6 @@
+# Update
+Development for this project has been temporarily suspended. To be continued.....
+
 # Grit TManager
 An open source Task and Time Management application that aims to maximize your productivity. Reduce chaos, reduce task cluttering, reduce ambiguity, anxiety and enjoy life.
 
